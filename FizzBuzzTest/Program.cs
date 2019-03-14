@@ -10,7 +10,10 @@ namespace FizzBuzzTest
     {
         static void Main(string[] args)
         {
-          int[] array = new int[1000];
+          int a;
+          Console.WriteLine("Enter size of index:");
+          a = int.Parse(Console.ReadLine());
+          int[] array = new int[a];
           for(int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(Game.FinalOutput(i));
